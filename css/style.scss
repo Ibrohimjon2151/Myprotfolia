@@ -64,4 +64,28 @@ $shadow: "0 24px 36px -11px rgb(0 0 0 / 9%)";
             }
         }
     }
+    .header {
+        width: 100%;
+        position: absolute;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            font-family: Bold;
+            color: $black;
+        }
+
+        .burger-icon {
+            @include flexCenter(column);
+            gap: 3px;
+            cursor: pointer;
+
+            span {
+                width: 20px;
+                height: 1.3px;
+                background: $black;
+            }
+        }
+    }
 }
