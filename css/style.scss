@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box
 }
-@import "fonts";
+// @import "fonts";
 
 $primary:#d5c455;
 $black:#222222;
@@ -14,4 +14,46 @@ $shadow: "0 24px 36px -11px rgb(0 0 0 / 9%)";
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@font-face {
+    font-family: Bold;
+    src: url(/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Medium;
+    src: url(/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Regular;
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+.landing-page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    .right{
+        background-color: $primary;
+    }
+    .left{
+        .position{
+            font-family: Bold;
+            color: $black;
+        }
+        .name{
+            font-family: Bold;
+            font-size: 60px;
+            color: $black;
+        }
+        .buttons{
+            button{
+                color: white;
+                font-family:Bold;
+                padding: 16px 24px;
+                border: none;
+            }
+            button:nth-child(2){
+                background-color: $primary;
+            }
+        }
+    }
 }
