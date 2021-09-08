@@ -35,6 +35,11 @@ $shadow: "0 24px 36px -11px rgb(0 0 0 / 9%)";
         background-color: $primary;
     }
     .left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 100px;
+        background-color: #f8f8f8;
         .position{
             font-family: Bold;
             color: $black;
@@ -43,15 +48,18 @@ $shadow: "0 24px 36px -11px rgb(0 0 0 / 9%)";
             font-family: Bold;
             font-size: 60px;
             color: $black;
+            line-height: 1.2;
         }
         .buttons{
             button{
                 color: white;
                 font-family:Bold;
                 padding: 16px 24px;
+                box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
                 border: none;
+                background-color: white;
             }
-            button:nth-child(2){
+            button:nth-child(1){
                 background-color: $primary;
             }
         }

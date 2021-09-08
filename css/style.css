@@ -32,6 +32,20 @@
   background-color: #d5c455;
 }
 
+.landing-page .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 100px;
+}
+
 .landing-page .left .position {
   font-family: Bold;
   color: #222222;
@@ -41,6 +55,7 @@
   font-family: Bold;
   font-size: 60px;
   color: #222222;
+  line-height: 1.2;
 }
 
 .landing-page .left .buttons button {
